@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>A Special Message For Princess Ummi 🤍</title>
 
+    <style>
+      body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .slide {
+        display: none;
+        background: #ffd6e7;
+        width: 80%;
+        max-width: 700px;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 5px 20 px rgba(0,0,0,0.2);
+      }
+
+      .slide.active{
+        display: block;
+      }
+
+      h1{
+        color: hotpink;
+      }
+
+      p{
+        font-size: 18px;
+        line-height: 1.8;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px 25px;
+      }
+      </style>
+  </head>
+  <body>
+
+    <div class="slide active">
+      <h1>🌸 A Special Message For Princess Ummi 🌸</h1>
+
+      <p>
+        Assalamualaikum Princess Ummi 🤍
+        <br><br>
+        Sebelum princess memulakan perjalanan baru di IPG, ada sesuatu yang saya ingin sampaikan.
+      </p>
+<button onclick="nextSlide()">Next ➜</button>
+    </div>
+
+    <  div class="slide">
+      <h1>🎉Tahniah Princess!</h1>
+
+      <p>
+        Tahniah kerana berjaya melangkah ke IPG.🌸
+        <br><br>
+        Semoga perjalanan princess dipermudahkan,dipenuhi ilmu bermanfaat dan dikelilingi oleh rakan-rakan yang baik
+      </p>
+      <button onclick="nextSlide()">Next ➜</button>
+    </div>
+
+    <div class="slide">
+      <h1>💖 Keep Going</h1>
+      <p>
+        Mungkin perjalanan ini tidak sentiasa mudah,
+        tetapi aku yakin Princess Ummi mampu menghadapinya.
+        <br><br>
+        Teruskan jadi princess yang rajin,
+        cekal dan sentiasa berusaha.
+        <br><br>
+        Kalau aku boleh,princess pun boleh.✨
+      </p>
+      <button onclick="nextSlide()">Next ➜</button>
+    </div>
+
+    <div class="slide">
+      <h1>📸Memories</h1>
+      <img src="gambar1 .jpeg">
+
+      <p>
+        Semoga setiap kenangan yang tercipta nanti
+        menjadi keindahan yang paling indah dalam hidup princess.🌸
+      </p>
+      <button onclick="nextSlide()">Next ➜</button>
+    </div>
+
+    <div class="slide">
+      <h1>🤍My Support</h1>
+
+      <p>
+        Saya sentiasa menyokong princess.
+        <br><br>
+        Princess ingat tau,
+        saya Alif Qusyairi tetap menjadi fans no 1
+        Ummi Zulaikha.✨
+      </p>
+      <button onclick="nextSlide()">Next ➜</button>
+    </div>
+    <div class='slide">
+      <h1> Until We Meet Again</h1>
+
+      <p>
+      Semoga kita berjumpa semula di versi terbaik dalam hidup kita.
+      <br><br>
+      After dua ii berjaya,saya ajak princess kawin dan kita start plan.
+      <br><br>
+      That's my promise,please wait for me.🤍
+      <br><br>
+      Jaga diri baik ii princes.
+      <br><br>
+      Mungkin nanti lepas habis sem 1 aku akan chat princess.
+      <br><br>
+      Kalau ade sesuatu yang seronok aku share aja.
+      Apa ii pun princess roro jerr,
+      <br><br>
+      Itu saja.
+      <br><br>
+      Bye,Assalamualaikum Ummi Zulaikha. 🤍
+    </p>
+      <button onclick="finish()">Finish ❤️</button>
+    </div>
+
+    
+      
+    <script>
+let current = 0;
+const slides = document.querySelectorAll(".slide");
+
+function nextSlide(){
+    slides[current].classList.remove("active");
+    current++;
+
+    if(current < slides.length){
+        slides[current].classList.add("active");
+    }
+}
+
+function finish(){
+    alert("Semoga berjaya di IPG Princess Ummi 🤍");
+}
+</script>
+
+</body>
+</html>
+      
+        
+    
+        
+        
+      
+
+        
